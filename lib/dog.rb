@@ -4,15 +4,15 @@ class Dog
   attr_accessor :name
   def initialize(name)
     @name = name
-    self.save
+    save
   end
-  def all
+  def self.all
     @@all
   end
   def print_all
     puts @@all.name.uniq 
   end
-  def save
+  def self.save
     @@all << self
   end
   def clear_all
