@@ -9,10 +9,10 @@ class Dog
   def self.all
     @@all
   end
-  def print_all
+  def self.print_all
     puts @@all.name.uniq 
   end
-  def self.save
+  def save
     @@all << self
   end
   def clear_all
