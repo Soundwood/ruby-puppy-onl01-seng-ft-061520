@@ -10,7 +10,7 @@ class Dog
     @@all
   end
   def self.print_all
-    puts @@all.map { |name| 
+    puts @@all.uniq  
   end
   def save
     @@all << self
